@@ -74,7 +74,14 @@ class Tree:
             print "Empty tree passed-in to the deleteNode method. Returning."
             return
 
-        # recursivly delete
+        # if the node having value 'val' is root
+        #                   20(30)
+        #             10            30
+        #          1      15    28      33
+        if self.root.val == val:
+            # Make left
+
+        # recursivly delete the node with value 'val'
         # pass - in the node where we start looking for val
         # also pass - in the value of the parent with each recursive call
         if self.deleteNodeRecursively(self.root, None, val) == False:
